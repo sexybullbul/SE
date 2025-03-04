@@ -1,0 +1,117 @@
+Software Requirements Specification (SRS) 
+Movie Review System  
+________________________________________
+1. Introduction
+1.1 Purpose
+The purpose of this Software Requirements Specification (SRS) document is to describe the functional and non-functional requirements for a Movie Review System. The system will allow users to discover movies, submit reviews, rate them, and interact with other users’ reviews. This document will ensure that the system meets user expectations and business goals.
+1.2 Scope
+This Movie Review System will:
+●	Enable users to search for movies based on various criteria.
+●	Allow users to view movie details (e.g., title, cast, summary).
+●	Enable users to submit and read reviews, rate movies, and manage their profiles.
+●	Provide administrators the ability to manage movie listings, reviews, and users.
+●	Provide ratings and recommendations based on user preferences.
+1.3 Definitions, Acronyms, and Abbreviations
+●	User: An individual who interacts with the system, either as a regular user or an admin.
+●	Administrator: A user with additional privileges to manage movie data, reviews, and user information.
+●	Movie: A film title with associated metadata, including a plot summary, release year, and cast.
+●	Review: A written opinion of a movie, including a numerical rating (1-5 stars).
+●	Rating: A numerical evaluation (1-5 stars) of a movie by a user.
+1.4 References
+●	The Movie Database (TMDb) API Documentation
+●	RESTful API Design Best Practices
+1.5 Overview
+This document defines the requirements for the Movie Review System, including functional and non-functional specifications, system interfaces, and the expected behavior of the software.
+________________________________________
+2. Overall Description
+2.1 Product Perspective
+The Movie Review System is a web-based platform for movie discovery and review submission. It will integrate with external movie databases to gather information about films, and it will allow users to submit, read, and rate reviews of movies.
+2.2 Product Features
+1.	Movie Search: Users can search for movies by title, genre, rating, or other criteria.
+2.	Movie Details: Users can view detailed information about a movie, including the cast, plot summary, and reviews.
+3.	Review and Rating: Users can submit reviews for movies and assign a rating (1-5 stars).
+4.	User Profile Management: Users can create, update, and view their profiles.
+5.	Admin Panel: Administrators can manage movie information, reviews, and user accounts.
+6.	Movie Recommendations: The system can recommend movies to users based on their preferences and past ratings.
+2.3 User Classes and Characteristics
+●	End Users: These users can browse movies, write reviews, and rate them. They can also update their profile.
+●	Administrators: These users have permission to manage movie listings, reviews, and user data.
+2.4 Operating Environment
+The Movie Review System will be accessible via web browsers (Chrome, Firefox, Safari) and will be hosted on cloud servers.
+________________________________________
+3. System Features
+3.1 Movie Search
+●	Description: The system will allow users to search for movies by title, genre, year of release, or rating.
+●	Inputs: User-entered search query (text or filters).
+●	Outputs: List of movies matching the search criteria, displaying titles, release year, and ratings.
+●	Dependencies: Movie database, search algorithm.
+3.2 Movie Details
+●	Description: Users can view detailed information about a selected movie, including title, plot summary, cast, release date, average user rating, and reviews.
+●	Inputs: Movie ID or search results selection.
+●	Outputs: Movie details page with relevant information.
+●	Dependencies: Movie database, review database.
+3.3 Review Submission and Rating
+●	Description: Users can write reviews for movies they have watched, providing both textual feedback and a numerical rating (1-5 stars).
+●	Inputs: Review text, rating (1-5).
+●	Outputs: Review posted to the movie’s page.
+●	Dependencies: User profile, review database.
+3.4 User Profile Management
+●	Description: Users can create, update, and view their profiles, including personal information and review history.
+●	Inputs: User registration data (username, email, password).
+●	Outputs: User profile page, ability to manage settings.
+●	Dependencies: User authentication system, database.
+3.5 Admin Panel
+●	Description: Admin users can log in to manage movies, reviews, and user data. Admins can add or remove movies, moderate reviews, and manage user accounts.
+●	Inputs: Admin credentials.
+●	Outputs: Admin dashboard with movie and user management options.
+●	Dependencies: Admin authentication system, movie management tools.
+________________________________________
+4. External Interface Requirements
+4.1 User Interfaces
+●	Home Page: Displays trending movies, top-rated movies, and a search bar.
+●	Movie Page: Displays detailed movie information and reviews with a rating system.
+●	User Profile Page: Displays the user’s profile and their submitted reviews.
+●	Admin Dashboard: Allows administrators to manage movie information and user accounts.
+4.2 Hardware Interfaces
+The system is accessible on any device with internet access (laptops, smartphones, tablets).
+4.3 Software Interfaces
+●	Movie Database API: The system will integrate with external APIs (e.g., The Movie Database) to retrieve movie data, such as titles, genres, and cast.
+●	Authentication API: For user login and profile management.
+________________________________________
+5. System Features (Continued)
+5.1 Search Functionality
+●	Users can filter search results by movie genre, year, rating, etc.
+●	The system will return matching movies along with thumbnails, titles, and short descriptions.
+5.2 Movie Ratings and Reviews
+●	Users will rate movies using a 1-5 star system.
+●	Reviews will be moderated by administrators to prevent inappropriate content.
+5.3 User Recommendations
+●	The system will analyze user ratings and suggest similar movies based on their interests.
+________________________________________
+6. Non-Functional Requirements
+6.1 Performance Requirements
+●	The system must support at least 1000 concurrent users.
+●	Pages must load within 3 seconds.
+6.2 Security Requirements
+●	Passwords must be securely stored using encryption (e.g., bcrypt).
+●	User data must comply with privacy laws like GDPR.
+6.3 Usability
+●	The interface should be intuitive, with a responsive design that works on mobile and desktop devices.
+6.4 Availability
+●	The system should have 99.9% uptime, excluding planned maintenance.
+________________________________________
+7. Other Requirements
+7.1 Data Retention
+●	Reviews and movie data should be stored indefinitely, with regular backups.
+7.2 Compliance
+●	The system must comply with data protection regulations like GDPR, ensuring user privacy and data security.
+________________________________________
+8. Appendices
+8.1 Glossary
+●	Review: A user’s feedback on a movie, including a star rating.
+●	Rating: A numerical score (1-5) that evaluates a movie.
+8.2 Acronyms
+●	API: Application Programming Interface
+●	GDPR: General Data Protection Regulation
+________________________________________
+
