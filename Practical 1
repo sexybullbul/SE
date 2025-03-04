@@ -1,0 +1,55 @@
+Problem Statement:
+
+Development of a Relevance-Based Movie Recommendation System
+
+Objective:
+
+ Design and implement a movie recommendation system that ranks and suggests movies based
+ on the relevance of a user's preferences, such as genre, actors, or ratings. The system should
+ help users discover new movies that match their tastes and interests.
+
+
+Problem Description:
+
+ With the vast number of movies available on streaming platforms, users often face the
+ challenge of finding movies that are relevant to their preferences. A movie recommendation
+ system helps to solve this problem by suggesting movies that the user is likely to enjoy based
+ on their past interactions, preferences, and behavior.
+ The system should meet the following requirements:
+
+1. User Profile:- The system should allow users to create a profile that includes their movie preferences, such
+ as preferred genres (e.g., action, comedy, drama), favorite actors, and preferred movie ratings
+ (e.g., only recommend movies with ratings above 7/10).
+
+2. Movie Database:- The system should have a database of movies that includes information such as title, genre,
+ cast, director, release year, and IMDb rating.
+
+3. Query Input:- The user should be able to input their preferences or queries, such as "Show me action
+ movies with Tom Hanks," or "Recommend me drama movies with ratings above 8."
+
+4. Relevance Calculation:- Implement an algorithm to calculate the relevance of movies to the user's query. This can be
+ done using methods like weighted scoring based on genre, actor, and ratings, or more
+ advanced methods like collaborative filtering or content-based filtering.
+
+5. Ranking Results:- The system should rank the recommended movies in order of relevance based on the user's
+ input, with the most relevant movie at the top of the list.
+
+6. Display Results:- Display a list of recommended movies with essential details such as the movie title, genre,
+ lead actors, and IMDb rating. Each movie entry should also include a brief synopsis to help the
+ user decide whether they would like to watch it.
+
+7. Evaluation:- The system should include an evaluation mechanism to assess the quality of the
+ recommendations, such as user ratings or feedback on the suggested movies.
+ 
+
+Deliverables:- A fully functional movie recommendation system.- A user-friendly interface that allows users to input preferences and receive recommendations.- Documentation explaining the design, algorithms used for relevance calculation, and the
+ overall functioning of the system.- A report analyzing the effectiveness of your recommendation system and possible
+ improvements.
+
+
+Tools and Technologies:- Programming Language: Python, Java, or C#- Data Structure: Arrays, Lists, Dictionaries, or HashMaps- Database: SQLite, MySQL, or a simple file-based database (CSV, JSON)- Libraries (optional): Pandas, NumPy (for data handling), Scikit-learn (for machine learning
+ algorithms), or TensorFlow/Keras (for advanced models)
+Expected Outcomes:- Gain practical experience in building recommendation systems and applying machine learning
+ techniques to real-world problems.- Understand how to build and query databases efficiently to store and retrieve movie
+ information.- Develop skills in ranking and filtering algorithms to enhance user experience and deliver
+ personalized recommendations.
